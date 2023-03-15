@@ -9,7 +9,7 @@
     nav {
         position: relative;
         padding: 3%;
-        background-color: whitesmoke;
+        background-color: white;
         @include flexRow;
         justify-content: space-between;
 
@@ -23,13 +23,13 @@
             padding: 2% 3%;
             text-align: center;
             color: white;
-            background-color: $navColor;
+            background-color: $nav;
         }
 
         details > article {
             @include flexCol(5vh);
             position: absolute;
-            background-color: $navColor;
+            background-color: $nav;
             left: 3%;
             margin-top: 1%;
             width: 84%;
