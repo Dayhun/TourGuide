@@ -1,2 +1,27 @@
 @media (min-width: $tabletVersion) {
+    // NAV
+    nav {
+        aside,
+        details {
+            font-size: 28px;
+            padding: 1.5% 2%;
+        }
+
+        details {
+            cursor: pointer;
+        }
+
+        details > article {
+            row-gap: 7vh;
+            font-size: 22px;
+
+            > ul:first-child {
+                row-gap: 4vh;
+            }
+
+            a:hover {
+                color: black;
+            }
+        }
+    }
 }
