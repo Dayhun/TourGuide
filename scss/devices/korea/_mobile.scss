@@ -5,6 +5,10 @@
         height: 100vh;
     }
 
+    img {
+        width: 20%;
+    }
+
     // NAV
     nav {
         position: relative;
@@ -23,13 +27,13 @@
             padding: 2% 3%;
             text-align: center;
             color: white;
-            background-color: $navColor;
+            background-color: $nav;
         }
 
         details > article {
             @include flexCol(5vh);
             position: absolute;
-            background-color: $navColor;
+            background-color: $nav;
             left: 3%;
             margin-top: 1%;
             width: 84%;
