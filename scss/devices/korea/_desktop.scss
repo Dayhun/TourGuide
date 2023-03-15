@@ -1,2 +1,37 @@
 @media (min-width: $desktopVersion) {
+    details {
+        display: none;
+    }
+
+    nav {
+        height: 10vh;
+        padding: 0 3%;
+        align-items: center;
+        position: sticky;
+        top: 0;
+
+        > ul {
+            @include flexRow(1vw);
+            width: 45%;
+            justify-content: space-around;
+            text-transform: uppercase;
+        }
+
+        aside {
+            padding: 0;
+            width: 10vh;
+            height: 10vh;
+            @include flexRow;
+            justify-content: center;
+            align-items: center;
+        }
+
+        a {
+            color: black;
+            font-weight: 600;
+            &:hover {
+                color: $navColor;
+            }
+        }
+    }
 }
