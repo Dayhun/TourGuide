@@ -1,7 +1,37 @@
 @media (min-width: $mobileVersion){
+    // GENERAL STYLE START
     img{
         width: 15%;
     }
+    section{
+        h3{
+            font-size: 30px;
+        }
+    }
+    // GENERAL STYLE END
+    main{
+        section{
+            width: 100%;
+            @include flexCol(3vw);
+            align-items: center;
+        }
+    }
+    // SUMMARY START
+    .summary{
+        background-color: lightgray;
+        width: 95%;
+        @include flexCol(3vw);
+        text-align: center;
+        padding-bottom: 2vh;
+        article{
+            @include flexCol(3vw);
+            align-items:center;
+            p{
+                width: 90%;
+            }
+        }
+    }
+    // SUMMARY END
     // FOOTER START
     footer{
         background-color: $footer;
