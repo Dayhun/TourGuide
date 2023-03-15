@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Colombia</title>
     <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
 </head>
 <body>
     <!--Header-->
@@ -39,10 +40,41 @@
         </section>
         <section class="cright" id="cright">
             <section class="form" id="form">
-
+                <article>
+                    <i class="fa-solid fa-envelope-open-text"></i>
+                </article>
+                <form action="#" method="post">
+                    <caption>blablabla</caption>
+                    <input type="text" id="fName" name="fName" placeholder="First Name">
+                    <input type="text" id="lName" name="lName" placeholder="Last Name">
+                    <input type="email" id="email" name="email" placeholder="Your email">
+                    <select name="country" id="country">
+                        <option value="" disabled selected>Select Your Country</option>
+                        <option value="col">Colombia</option>
+                        <option value="br">Brazil</option>
+                        <option value="kr">South Korea</option>
+                        <option value="usa">United States</option>
+                        <option value="ukraine">Ukraine</option>
+                        <option value="ger">Germany</option>
+                        <option value="can">Canada</option>
+                        <option value="ita">Italy</option>
+                        <option value="fr">France</option>
+                        <option value="rome">Rome</option>
+                    </select>
+                    <input type="number" name="age" id="age" placeholder="Age">
+                    <select name="profile" id="profile">
+                        <option value="" disabled selected>Select Your Profile</option>
+                        <option value="student">Student</option>
+                        <option value="company">Company</option>
+                        <option value="personal">Personal Use</option>
+                    </select>
+                    <label for="conditions">I Acknowledge That I Have Read And Understand The Terms And Conditions</label>
+                    <input type="checkbox" id="conditions" name="conditions">
+                    <input type="submit" value="Subscribe!">
+                </form>
             </section>
             <section class="faq" id="faq">
-                
+
             </section>
         </section>
     </main>
