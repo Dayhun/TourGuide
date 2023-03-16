@@ -24,4 +24,218 @@
             }
         }
     }
+
+    // HEADER
+    .kHeader {
+        height: 45vh;
+        > section {
+            > h1 {
+                font-size: 50px;
+                letter-spacing: 2px;
+            }
+            > h2 {
+                width: 70%;
+                font-size: 22px;
+            }
+        }
+    }
+
+    // MAIN
+    .kMain {
+        padding-top: 10%;
+        row-gap: 10vh;
+        p {
+            font-size: 17px;
+        }
+        > section > article {
+            > h3 {
+                font-size: 28px;
+            }
+            > h4 {
+                font-size: 18px;
+            }
+        }
+    }
+
+    // INTRO
+    .kIntro {
+        img:first-child {
+            display: flex;
+            position: relative;
+        }
+        img:nth-child(2) {
+            position: absolute;
+            opacity: 0;
+            &:hover {
+                opacity: 1;
+                cursor: pointer;
+            }
+        }
+    }
+
+    // SEOUL
+    .kSeoul {
+        figcaption {
+            visibility: hidden;
+        }
+
+        figure {
+            height: 40vh;
+            position: relative;
+            overflow-y: hidden;
+            justify-content: flex-end;
+            &:hover > figcaption {
+                visibility: visible;
+                height: 100%;
+                cursor: pointer;
+            }
+        }
+        img {
+            z-index: 1;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+        }
+        > section {
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: flex-start;
+            justify-content: space-between;
+            row-gap: 4vh;
+            column-gap: 2vw;
+        }
+        aside {
+            row-gap: 1vh;
+            flex-direction: column;
+            padding: 0;
+            width: 47%;
+            background-color: transparent;
+            figcaption {
+                z-index: 2;
+                position: absolute;
+                background-color: rgba($color: $footer, $alpha: 0.9);
+                width: 90%;
+                height: 0%;
+                display: flex;
+                text-align: center;
+                align-items: center;
+                justify-content: center;
+                row-gap: 2vh;
+                transition: 0.4s;
+                padding: 0 5%;
+            }
+            figcaption > h3 {
+                font-size: 15px;
+                color: white;
+                border: 2px dashed white;
+            }
+            figcaption > p {
+                font-size: 12px;
+                color: white;
+            }
+            > h3 {
+                font-size: 16px;
+                width: 96%;
+                padding: 2%;
+                text-align: center;
+                color: $aColor;
+            }
+        }
+    }
+
+    // JEJU
+    .kJeju {
+        img {
+            height: 50vh;
+        }
+        a {
+            width: 35%;
+            font-weight: 600;
+            &:hover {
+                background-color: transparent;
+                color: $aColor;
+            }
+        }
+    }
+
+    // RECOMMENDATION
+    .kRecommendation {
+        > section {
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: flex-start;
+            justify-content: space-between;
+            row-gap: 4vh;
+            column-gap: 2vw;
+        }
+
+        figcaption {
+            visibility: hidden;
+        }
+
+        figure {
+            height: 40vh;
+            position: relative;
+            overflow-y: hidden;
+            justify-content: flex-end;
+            &:hover > figcaption {
+                visibility: visible;
+                height: 100%;
+                cursor: pointer;
+            }
+        }
+        img {
+            z-index: 1;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    .kFood,
+    .kAlcohol {
+        width: 47%;
+        figcaption {
+            z-index: 2;
+            position: absolute;
+            background-color: rgba($color: $footer, $alpha: 0.9);
+            width: 90%;
+            height: 0%;
+            display: flex;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            row-gap: 2vh;
+            transition: 0.4s;
+            padding: 0 5%;
+        }
+        figcaption > h3 {
+            font-size: 15px;
+            color: white;
+            border: 2px dashed white;
+        }
+        figcaption > p {
+            font-size: 12px;
+            color: white;
+        }
+    }
+
+    // SEASON
+    .kSeason {
+        img {
+            height: 30vh;
+        }
+        > section {
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: flex-start;
+            justify-content: space-between;
+            row-gap: 4vh;
+            column-gap: 2vw;
+        }
+        aside {
+            width: 38%;
+            min-height: 50vh;
+        }
+    }
 }
