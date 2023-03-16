@@ -1,5 +1,80 @@
 @media(min-width: $tabletVersion){
-    header{
-        display: flex;
+    // GENERAL STYLE START
+    main{
+        p{
+            font-size: 25px;
+        }
+        h3{
+            font-size: 40px;
+        }
     }
+    // GENERAL STYLE END
+    // NAV START
+    nav {
+        aside,
+        details {
+            font-size: 28px;
+            padding: 1.5% 2%;
+        }
+
+        details {
+            cursor: pointer;
+        }
+
+        details > article {
+            row-gap: 7vh;
+            font-size: 22px;
+
+            > ul:first-child {
+                row-gap: 4vh;
+            }
+
+            a:hover {
+                color: black;
+            }
+        }
+    }
+    // NAV END
+    // CULTURE START
+    .culture{
+        article{
+            h4{
+                font-size: 30px; 
+            }
+        }
+    }
+    // CULTURE END
+    // TOURIST ACTIVITIES START
+    .activities{
+        article{
+            h4{
+                font-size: 30px;
+            }
+        }
+    }
+    // TOURIST ACTIVITIES END
+    // TOURISTIC CITIES START
+    .cities{
+        article{
+            h4{
+                font-size: 30px; 
+            }
+            h5{
+                font-size: 30px;
+            }
+        }
+    }
+    // TOURISTIC CITIES END
+    // BIOMES START
+    .biomes{
+        article{
+            h5{
+                font-size: 30px;
+            }
+            a{
+                font-size: 25px;
+            }
+        }
+    }
+    // BIOMES END
 }
