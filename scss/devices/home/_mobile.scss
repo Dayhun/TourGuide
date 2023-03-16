@@ -4,7 +4,14 @@
         // To see Scroll
         height: 100vh;
     }
-
+    main{
+        section{
+            width: 100%;
+            @include flexCol(3vw);
+            align-items: center;
+            text-align: center;
+        }
+    }
     // NAV
     nav {
         position: relative;
@@ -56,42 +63,55 @@
             }
         }
     }
-        // FOOTER START
-        footer{
-            background-color: $footer;
-            height: 16vh;
+    // SUMMARY START
+    .summary{
+        @include flexCol(2vh);
+        @include flexCenter;
+        article{
+            padding-top: 2vh;
+            padding-bottom: 2vh;
+            @include flexCenter;
+            text-align: center;
+            background-color: lightgray;
+        }
+    }
+    // SUMMARY END
+    // FOOTER START
+    footer{
+        background-color: $footer;
+        height: 16vh;
+        width: 100%;
+        section{
+            @include flexCol(2vw);
             width: 100%;
-            section{
-                @include flexCol(2vw);
-                width: 100%;
-                height: 100%;
-                align-items: center;
-                justify-content: center;
-                p{
-                    color: white;
-                }
-                ul{
-                    @include flexRow(3vh);
-                    display: flex;
-                    column-gap: 3vh;
-                }
-                li{
-                    position: relative;
-                    display: inline-block;
-                    width: 30px;
-                    height: 30px;
-                    border-radius: 50%;
-                    border: 2px solid white;
-                }   
-                a{
-                    color: white;
-                    position: absolute;
-                    top: 50%;
-                    left: 50%;
-                    transform: translate(-50%, -50%);
-                    font-size: 15px;
-                }
+            height: 100%;
+            align-items: center;
+            justify-content: center;
+            p{
+                color: white;
+            }
+            ul{
+                @include flexRow(3vh);
+                display: flex;
+                column-gap: 3vh;
+            }
+            li{
+                position: relative;
+                display: inline-block;
+                width: 30px;
+                height: 30px;
+                border-radius: 50%;
+                border: 2px solid white;
+            }   
+            a{
+                color: white;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                font-size: 15px;
             }
         }
-        // FOOTER END
+    }
+    // FOOTER END
 }
