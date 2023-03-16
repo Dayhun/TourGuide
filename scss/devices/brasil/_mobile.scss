@@ -1,8 +1,5 @@
 @media (min-width: $mobileVersion){
     // GENERAL STYLE START
-    img{
-        width: 15%;
-    }
     section{
         h3{
             font-size: 30px;
@@ -14,11 +11,28 @@
             width: 100%;
             @include flexCol(3vw);
             align-items: center;
+            text-align: center;
         }
     }
     // SUMMARY START
     .summary{
-        background-color: lightgray;
+        width: 95%;
+        @include flexCol(3vw);
+        text-align: center;
+        article{
+            background-color: lightgray;
+            height: 70vh;
+            @include flexCol(3vw);
+            align-items:center;
+            justify-content: center;
+            p{
+                width: 90%;
+            }
+        }
+    }
+    // SUMMARY END
+    // CULTURE START
+    .culture{
         width: 95%;
         @include flexCol(3vw);
         text-align: center;
@@ -26,12 +40,33 @@
         article{
             @include flexCol(3vw);
             align-items:center;
-            p{
-                width: 90%;
+            figure{
+                @include flexCol(3vw);
+                align-items:center;
+                justify-content: center;
+                height: 100%;
+                padding-top: 3vh;
+                padding-bottom: 3vh;
+                background-color: lightgray;
+                img{
+                    width: 80%;
+                }
+                figcaption{
+                    @include flexCol(3vw);
+                    align-items:center;
+                    h4{
+                        padding: 2%;
+                        background-color: $nav;
+                    }
+                    p{
+                        width: 90%;
+                    }
+                }
+
             }
         }
     }
-    // SUMMARY END
+    // CULTURE END
     // FOOTER START
     footer{
         background-color: $footer;
