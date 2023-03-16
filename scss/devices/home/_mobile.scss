@@ -1,0 +1,59 @@
+@media (min-width: $mobileVersion) {
+    video {
+        width: 20%;
+        // To see Scroll
+        height: 100vh;
+    }
+
+    // NAV
+    nav {
+        position: relative;
+        padding: 3%;
+        background-color: white;
+        @include flexRow;
+        justify-content: space-between;
+
+        > ul {
+            display: none;
+        }
+
+        aside,
+        details {
+            font-size: 25px;
+            padding: 2% 3%;
+            text-align: center;
+            color: white;
+            background-color: $nav;
+        }
+
+        details > article {
+            @include flexCol(5vh);
+            position: absolute;
+            background-color: $nav;
+            left: 3%;
+            margin-top: 1%;
+            width: 84%;
+            padding: 5%;
+            font-size: 18px;
+            font-weight: 600;
+
+            > ul:first-child {
+                @include flexCol(3vh);
+                align-items: center;
+                padding-top: 2vh;
+                text-transform: uppercase;
+            }
+
+            > ul:last-child {
+                @include flexRow;
+                row-gap: 1vh;
+                justify-content: space-between;
+                flex-wrap: wrap;
+            }
+
+            a {
+                color: white;
+            }
+        }
+    }
+}
