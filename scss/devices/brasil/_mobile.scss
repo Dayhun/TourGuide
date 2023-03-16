@@ -9,8 +9,33 @@
         section{
             width: 100%;
             @include flexCol(3vw);
-            align-items: center;
+            @include flexCenter;
             text-align: center;
+            section{
+                width: 95%;
+                @include flexCol(3vw);
+                text-align: center;
+                padding-bottom: 2vh;
+            }
+            >article{
+                @include flexCol(5vw);
+                @include flexCenter;
+            }
+            figure{
+                @include flexCol(5vw);
+                @include flexCenter;
+                height: 100%;
+                padding-top: 3vh;
+                padding-bottom: 3vh;
+                background-color: lightgray;
+            }
+            img{
+                width: 95%;
+            }
+            figcaption{
+                @include flexCol(5vw);
+                @include flexCenter;
+            }
         }
     }
     // GENERAL STYLE END
@@ -62,17 +87,11 @@
     // NAV END
     // SUMMARY START
     .summary{
-        width: 95%;
-        @include flexCol(3vw);
-        text-align: center;
         article{
             background-color: lightgray;
-            height: 100%;
             padding-top: 3vh;
             padding-bottom: 3vh;
-            @include flexCol(3vw);
-            align-items:center;
-            justify-content: center;
+            @include flexCenter;
             p{
                 width: 90%;
             }
@@ -81,116 +100,46 @@
     // SUMMARY END
     // CULTURE START
     .culture{
-        width: 95%;
-        @include flexCol(3vw);
-        text-align: center;
-        padding-bottom: 2vh;
         article{
-            @include flexCol(5vw);
-            align-items:center;
-            figure{
-                @include flexCol(5vw);
-                align-items:center;
-                justify-content: center;
-                height: 100%;
-                padding-top: 3vh;
-                padding-bottom: 3vh;
-                background-color: lightgray;
-                img{
-                    width: 95%;
-                }
-                figcaption{
-                    @include flexCol(5vw);
-                    align-items:center;
-                    h4{
-                        padding: 2%;
-                        background-color: $nav;
-                    }
-                    p{
-                        width: 90%;
-                    }
-                }
+            h4{
+                padding: 2%;
+                background-color: $nav;
+            }
+            p{
+                width: 90%;
             }
         }
     }
     // CULTURE END
     // TOURIST ACTIVITIES START
     .activities{
-        width: 95%;
-        @include flexCol(3vw);
-        text-align: center;
-        padding-bottom: 2vh;
         article{
-            @include flexCol(5vw);
-            align-items:center;
-            figure{
-                @include flexCol(5vw);
-                align-items:center;
-                justify-content: center;
-                height: 100%;
-                padding-top: 3vh;
-                padding-bottom: 3vh;
-                background-color: lightgray;
-                img{
-                    width: 95%;
-                }
-                figcaption{
-                    @include flexCol(5vw);
-                    align-items:center;
-                    h4{
-                        padding: 2%;
-                        background-color: $nav;
-                    }
-                    p{
-                        width: 90%;
-                    }
-                }
+            h4{
+                padding: 2%;
+                background-color: $nav;
+            }
+            p{
+                width: 90%;
             }
         }
     }
     // TOURIST ACTIVITIES END
     // TOURISTIC CITIES START
     .cities{
-        width: 95%;
-        @include flexCol(3vw);
-        text-align: center;
-        padding-bottom: 2vh;
         article{
-            @include flexCol(5vw);
-            align-items:center;
-            figure{
-                @include flexCol(5vw);
-                align-items:center;
-                justify-content: center;
-                height: 100%;
-                padding-top: 3vh;
-                padding-bottom: 3vh;
-                background-color: lightgray;
-                img{
-                    width: 95%;
-                }
-                figcaption{
-                    @include flexCol(5vw);
-                    align-items:center;
-                    h4{
-                        font-weight: 700;
-                        font-size: 20px;
-                    }
-                    h5{
-                        font-weight: 700;
-                        font-size: 15px;
-                    }
-                }
+            h4{
+                font-weight: 700;
+                font-size: 20px;
+            }
+            h5{
+                font-weight: 700;
+                font-size: 15px;
             }
         }
     }
     // TOURISTIC CITIES END
     // BIOMES START
     .biomes{
-        width: 95%;
-        @include flexCol(3vw);
-        text-align: center;
-        padding-bottom: 2vh;
         aside{
             background-color: lightgray;
             height: 100%;
@@ -198,31 +147,13 @@
             padding-bottom: 3vh;
         }
         article{
-            @include flexCol(5vw);
-            align-items:center;
-            figure{
-                @include flexCol(5vw);
-                align-items:center;
-                justify-content: center;
-                height: 100%;
-                padding-top: 3vh;
-                padding-bottom: 3vh;
-                background-color: lightgray;
-                h5{
-                    font-size: 20px;
-                }
-                img{
-                    width: 95%;
-                }
-                figcaption{
-                    @include flexCol(5vw);
-                    align-items:center;
-                    a{
-                        padding: 2%;
-                        background-color: $footer;
-                        color: white;
-                    }
-                }
+            h5{
+                font-size: 20px;
+            }
+            a{
+                padding: 2%;
+                background-color: $footer;
+                color: white;
             }
         }
     }
@@ -234,33 +165,30 @@
         width: 100%;
         section{
             @include flexCol(2vw);
+            @include flexCenter;
             width: 100%;
             height: 100%;
-            align-items: center;
-            justify-content: center;
             p{
                 color: white;
             }
             ul{
                 @include flexRow(3vh);
-                display: flex;
-                column-gap: 3vh;
-                li{
-                    position: relative;
-                    display: inline-block;
-                    width: 30px;
-                    height: 30px;
-                    border-radius: 50%;
-                    border: 2px solid white;
-                    a{
-                        color: white;
-                        position: absolute;
-                        top: 50%;
-                        left: 50%;
-                        transform: translate(-50%, -50%);
-                        font-size: 15px;
-                    }
-                }   
+            }
+            li{
+                position: relative;
+                display: inline-block;
+                width: 30px;
+                height: 30px;
+                border-radius: 50%;
+                border: 2px solid white;
+            }   
+            a{
+                color: white;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                font-size: 15px;
             }
         }
     }
