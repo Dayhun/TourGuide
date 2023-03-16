@@ -5,7 +5,6 @@
             font-size: 30px;
         }
     }
-    // GENERAL STYLE END
     main{
         section{
             width: 100%;
@@ -14,6 +13,7 @@
             text-align: center;
         }
     }
+    // GENERAL STYLE END
     // NAV START
     nav {
         position: relative;
@@ -97,7 +97,7 @@
                 padding-bottom: 3vh;
                 background-color: lightgray;
                 img{
-                    width: 80%;
+                    width: 95%;
                 }
                 figcaption{
                     @include flexCol(5vw);
@@ -132,7 +132,7 @@
                 padding-bottom: 3vh;
                 background-color: lightgray;
                 img{
-                    width: 80%;
+                    width: 95%;
                 }
                 figcaption{
                     @include flexCol(5vw);
@@ -149,7 +149,42 @@
         }
     }
     // TOURIST ACTIVITIES END
-    // TOURIST ACTIVITIES START
+    // TOURISTIC CITIES START
+    .cities{
+        width: 95%;
+        @include flexCol(3vw);
+        text-align: center;
+        padding-bottom: 2vh;
+        article{
+            @include flexCol(5vw);
+            align-items:center;
+            figure{
+                @include flexCol(5vw);
+                align-items:center;
+                justify-content: center;
+                height: 100%;
+                padding-top: 3vh;
+                padding-bottom: 3vh;
+                background-color: lightgray;
+                img{
+                    width: 95%;
+                }
+                figcaption{
+                    @include flexCol(5vw);
+                    align-items:center;
+                    h4{
+                        font-weight: 700;
+                        font-size: 20px;
+                    }
+                    h5{
+                        font-weight: 700;
+                        font-size: 15px;
+                    }
+                }
+            }
+        }
+    }
+    // TOURISTIC CITIES END
     // FOOTER START
     footer{
         background-color: $footer;
