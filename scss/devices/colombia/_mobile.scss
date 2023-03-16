@@ -1,0 +1,76 @@
+@media (min-width:$mobileVersion){
+    main{
+        border-bottom: 1px solid grey;
+        border-top: 1px solid grey;
+    }
+    img{
+        width: 10%;
+    }
+    video{
+        width: 10%;
+    }
+    .cmain,
+    .cmain > .cleft,
+    .cmain > .cright{
+        @include flexCol(5vw);
+    }
+    .cmain,
+    .cleft,
+    .cright{
+        align-items: center;
+    }
+    .cmain{
+        padding-bottom: 5vw;
+    }
+    .faq{
+        width: 90%;
+        background-color:lightgrey;
+        padding: 3vh 0;
+        @include flexCol(0);
+        align-items: center;
+        ul a{
+            color: $footer;
+            display: flex;
+            justify-content: space-between;
+            width: 80%;
+            align-items: center;
+        }
+        li{
+            padding: 0 2vh;
+            @include flexRow(2vh);
+            border-bottom: 1px solid darkgrey;
+            font-size: 20px;
+            text-transform: uppercase;
+            height: 8vh;
+            align-items: center;
+        }
+        [class$=fa-q]{
+            color: red;
+            font-size: 1.4rem;
+        }
+        > article{
+            background-color: whitesmoke;
+            padding: 3vh 0vh;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            h2{
+                width: 80%;
+            }
+            
+        }
+        > ul{
+            padding: 2vh 0;
+            width: 85%;
+        }
+        > a{
+            background-color: #0E8388;
+            width: 30%;
+            padding: 1vh;
+            color: whitesmoke;
+        }
+    }
+    
+
+
+}
