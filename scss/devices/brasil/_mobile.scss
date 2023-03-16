@@ -185,6 +185,48 @@
         }
     }
     // TOURISTIC CITIES END
+    // BIOMES START
+    .biomes{
+        width: 95%;
+        @include flexCol(3vw);
+        text-align: center;
+        padding-bottom: 2vh;
+        aside{
+            background-color: lightgray;
+            height: 100%;
+            padding-top: 3vh;
+            padding-bottom: 3vh;
+        }
+        article{
+            @include flexCol(5vw);
+            align-items:center;
+            figure{
+                @include flexCol(5vw);
+                align-items:center;
+                justify-content: center;
+                height: 100%;
+                padding-top: 3vh;
+                padding-bottom: 3vh;
+                background-color: lightgray;
+                h5{
+                    font-size: 20px;
+                }
+                img{
+                    width: 95%;
+                }
+                figcaption{
+                    @include flexCol(5vw);
+                    align-items:center;
+                    a{
+                        padding: 2%;
+                        background-color: $footer;
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+    // BIOMES END
     // FOOTER START
     footer{
         background-color: $footer;
