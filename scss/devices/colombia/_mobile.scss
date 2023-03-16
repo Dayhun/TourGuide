@@ -9,6 +9,9 @@
     video{
         width: 10%;
     }
+    article > h2{
+        text-transform: uppercase
+    }
     .cmain,
     .cmain > .cleft,
     .cmain > .cright{
@@ -21,6 +24,7 @@
     }
     .cmain{
         padding-bottom: 5vw;
+        background-color: $mainColor;
     }
     .faq{
         width: 90%;
@@ -29,7 +33,7 @@
         @include flexCol(0);
         align-items: center;
         ul a{
-            color: $footer;
+            color: $aColor;
             display: flex;
             justify-content: space-between;
             width: 80%;
@@ -45,7 +49,7 @@
             align-items: center;
         }
         [class$=fa-q]{
-            color: red;
+            color: black;
             font-size: 1.4rem;
         }
         > article{
@@ -68,8 +72,52 @@
             width: 30%;
             padding: 1vh;
             color: whitesmoke;
+            @include flexCenter;
         }
     }
+    .form{
+        border-top: 1px solid grey;
+        border-bottom: 1px solid grey;
+    }
+    .food{
+        display: flex;
+        flex-direction: column-reverse;
+        > aside{
+            @include flexCol(3vw);
+            align-items: center;
+        }
+        a{
+            height: 6vh;
+            width: 6vh;
+            @include flexCenter;
+            font-size: 1.4rem;
+            background-color: $aColor;
+            color: whitesmoke;
+        }
+        > section{
+            display: none;
+        }
+    }
+    .foodList{
+        @include flexCol(3vw);
+        align-items: center;
+        img{
+            width: 100%;
+            height: 35vh;
+        }
+        figure{
+            @include flexCol(2vw);
+            align-items: center;
+        }
+        figcaption{
+            width: 80%;
+            text-align: center;
+            > h4{
+                text-transform: uppercase;
+            }
+        }
+    }
+    
     
 
 
