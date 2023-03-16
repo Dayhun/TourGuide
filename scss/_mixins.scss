@@ -9,3 +9,9 @@
     flex-direction: row;
     column-gap: $gap;
 }
+
+@mixin flexCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
