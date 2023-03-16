@@ -14,6 +14,52 @@
             text-align: center;
         }
     }
+    // NAV START
+    nav {
+        position: relative;
+        padding: 3%;
+        background-color: whitesmoke;
+        @include flexRow;
+        justify-content: space-between;
+        > ul {
+            display: none;
+        }
+        aside,
+        details {
+            font-size: 25px;
+            padding: 2% 3%;
+            text-align: center;
+            color: white;
+            background-color: $nav;
+        }
+        details > article {
+            @include flexCol(5vh);
+            position: absolute;
+            background-color: $nav;
+            left: 3%;
+            margin-top: 1%;
+            width: 84%;
+            padding: 5%;
+            font-size: 18px;
+            font-weight: 600;
+            > ul:first-child {
+                @include flexCol(3vh);
+                align-items: center;
+                padding-top: 2vh;
+                text-transform: uppercase;
+            }
+            > ul:last-child {
+                @include flexRow;
+                row-gap: 1vh;
+                justify-content: space-between;
+                flex-wrap: wrap;
+            }
+            a {
+                color: white;
+            }
+        }
+    }
+    // NAV END
     // SUMMARY START
     .summary{
         width: 95%;
@@ -21,7 +67,9 @@
         text-align: center;
         article{
             background-color: lightgray;
-            height: 70vh;
+            height: 100%;
+            padding-top: 3vh;
+            padding-bottom: 3vh;
             @include flexCol(3vw);
             align-items:center;
             justify-content: center;
@@ -38,10 +86,10 @@
         text-align: center;
         padding-bottom: 2vh;
         article{
-            @include flexCol(3vw);
+            @include flexCol(5vw);
             align-items:center;
             figure{
-                @include flexCol(3vw);
+                @include flexCol(5vw);
                 align-items:center;
                 justify-content: center;
                 height: 100%;
@@ -52,7 +100,7 @@
                     width: 80%;
                 }
                 figcaption{
-                    @include flexCol(3vw);
+                    @include flexCol(5vw);
                     align-items:center;
                     h4{
                         padding: 2%;
@@ -62,11 +110,46 @@
                         width: 90%;
                     }
                 }
-
             }
         }
     }
     // CULTURE END
+    // TOURIST ACTIVITIES START
+    .activities{
+        width: 95%;
+        @include flexCol(3vw);
+        text-align: center;
+        padding-bottom: 2vh;
+        article{
+            @include flexCol(5vw);
+            align-items:center;
+            figure{
+                @include flexCol(5vw);
+                align-items:center;
+                justify-content: center;
+                height: 100%;
+                padding-top: 3vh;
+                padding-bottom: 3vh;
+                background-color: lightgray;
+                img{
+                    width: 80%;
+                }
+                figcaption{
+                    @include flexCol(5vw);
+                    align-items:center;
+                    h4{
+                        padding: 2%;
+                        background-color: $nav;
+                    }
+                    p{
+                        width: 90%;
+                    }
+                }
+            }
+        }
+    }
+    // TOURIST ACTIVITIES END
+    // TOURIST ACTIVITIES START
     // FOOTER START
     footer{
         background-color: $footer;
