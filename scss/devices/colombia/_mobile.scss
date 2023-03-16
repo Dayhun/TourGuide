@@ -117,7 +117,70 @@
             }
         }
     }
-    
+    .festival{
+        > section{
+            display: none;
+        }
+        h2{
+            text-align: center;
+        }
+        > aside{
+            @include flexCol(5vw);
+        }
+    }
+    .festList{
+        @include flexCol(4vw);
+        align-items: center;
+        figure{
+            padding: 4%;
+            background-color: $footer;
+            width: 70%;
+            @include flexCol(0);
+            align-items: center;
+        }
+        figcaption{
+            text-align: center;
+        }
+        img{
+            width: 12vh;
+            height: 10vh;
+        }
+    }
+    .quote{
+        height: 10vh;
+        width: 100%;
+        background-color: $nav;
+    }
+    .place{
+        > article{
+            text-align: center;
+        }
+    }
+    .place1,
+    .place2,
+    .place3,
+    .place4{
+        > aside{
+            text-align: center;
+            background-color: $footer;
+        }
+        > figure{
+            @include flexRow(4vw);
+            padding: 2vh 0;
+        }
+        figcaption{
+            width: 60%;
+        }
+        img{
+            width: 35%;
+            height: 22vh;
+        }
+    }
+    .place > section:nth-child(odd){
+        > figure{
+            flex-direction: row-reverse;
+        }
+    }
     
 
 
