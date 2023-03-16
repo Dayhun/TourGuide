@@ -20,11 +20,11 @@
             }
             >article{
                 @include flexCol(5vw);
-                @include flexCenter;
+                justify-content: center;
             }
             figure{
                 @include flexCol(5vw);
-                @include flexCenter;
+                align-items: center;
                 height: 100%;
                 padding-top: 3vh;
                 padding-bottom: 3vh;
@@ -103,6 +103,7 @@
     .culture{
         article{
             h4{
+                width: 96%;
                 padding: 2%;
                 background-color: $nav;
             }
@@ -116,6 +117,7 @@
     .activities{
         article{
             h4{
+                width: 96%;
                 padding: 2%;
                 background-color: $nav;
             }
@@ -151,12 +153,13 @@
             h5{
                 font-size: 20px;
             }
-            a{
-                padding: 2%;
-                background-color: $footer;
-                color: white;
-            }
         }
+        a{
+            padding: 2%;
+            background-color: $footer;
+            color: white;
+        }
+        
     }
     // BIOMES END
     // FOOTER START

@@ -1,0 +1,128 @@
+@media (min-width: $desktopVersion){
+    // NAV START
+    details {
+        display: none;
+    }
+
+    nav {
+        height: 10vh;
+        padding: 0 3%;
+        align-items: center;
+        position: sticky;
+        top: 0;
+
+        > ul {
+            @include flexRow(1vw);
+            width: 45%;
+            justify-content: space-around;
+            text-transform: uppercase;
+        }
+
+        aside {
+            padding: 0;
+            width: 10vh;
+            height: 10vh;
+            @include flexRow;
+            justify-content: center;
+            align-items: center;
+        }
+
+        a {
+            color: black;
+            font-weight: 600;
+            &:hover {
+                color: $nav;
+            }
+        }
+    }
+    // NAV END
+    // CULTURE START
+    .culture{
+        article{
+            @include flexRow(2vh);
+            align-items: normal;
+            figure{
+                width: 50%;
+                height: 200vh;
+            }
+            img{
+                height: 160px;
+            }
+        }
+    }
+    // CULTURE END
+    // TOURIST ACTIVITIES START
+    .activities{
+        article{
+            @include flexRow(2vh);
+             align-items: normal;
+            figure{
+                width: 50%;
+                height: 110vh;
+            }
+            img{
+                height: 170px;
+            }
+        }
+    }
+    // TOURIST ACTIVITIES END
+    // TOURISTIC CITIES START 
+    .cities{
+        article{
+            padding: 5%;
+            align-items: normal;
+            @include flexRow(2vh);
+            flex-wrap: wrap;
+            justify-content: center;
+            figure{
+                width: 30%;
+                height: 100%;
+            }
+            img{
+                height: 30vh;
+            }
+        }
+    }
+    // TOURISTIC CITIES END
+    // BIOMES START
+    .biomes{
+        aside{
+            width: 92%;
+        }
+        article{
+            padding-bottom: 3vh;
+            align-items: normal;
+            @include flexRow(2vh);
+            flex-wrap: wrap;
+            justify-content: center;
+            figure{
+                width: 30%;
+                height: 100%;
+            }
+            h5{
+                font-size: 25px;
+            }
+            img{
+                height: 30vh;
+            }
+            p{
+                font-size: 20px;
+            }
+            a:hover{
+                background-color: lightgray;
+                color: $aColor;
+            }
+        }
+    }
+    // BIOMES END
+    // FOOTER START
+    footer{
+        @include flexCenter;
+        section{
+            width: 95%;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+    }
+    // FOOTER END
+}
