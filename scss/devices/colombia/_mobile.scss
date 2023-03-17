@@ -1,8 +1,4 @@
 @media (min-width:$mobileVersion){
-    main{
-        border-bottom: 1px solid grey;
-        border-top: 1px solid grey;
-    }
     img{
         width: 10%;
     }
@@ -25,6 +21,7 @@
     .cmain{
         padding-bottom: 5vw;
         background-color: $mainColor;
+        padding-top: 5vw;
     }
     .faq{
         width: 90%;
@@ -146,11 +143,6 @@
             height: 10vh;
         }
     }
-    .quote{
-        height: 10vh;
-        width: 100%;
-        background-color: $nav;
-    }
     .place{
         > article{
             text-align: center;
@@ -179,6 +171,29 @@
     .place > section:nth-child(odd){
         > figure{
             flex-direction: row-reverse;
+        }
+    }
+    //quote
+    .quote{
+        height: 8vh;
+        width: 100%;
+        background-image: url("/img/colombia/bandejapaisa.jpg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        > article{
+            background-color: rgba($color: black
+            , $alpha: .5);
+            width: 100%;
+            height: 100%;
+        }
+        section{
+            height: 100%;
+            @include flexCenter;
+        }
+        h6{
+            color: whitesmoke;
+            font-size: 1rem;
         }
     }
     

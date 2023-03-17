@@ -1,3 +1,51 @@
 @media (min-width:$tabletVersion){
-    
+    .gallery{
+        @include flexRow(1vh);
+        figcaption{
+            display: none;
+        }
+        img{
+            width: 100%;
+            height: 15vh;
+        }
+    }
+    .place{
+        width: 100%;
+    }
+    .festival{
+        width: 90%;
+        > section{
+            @include flexCenter;
+            img{
+                width: 10vh;
+                height: 10vh;
+            }
+        }
+        @include flexRow(0);
+    }
+    .festList{
+        flex-direction: row;
+        column-gap:1vh;
+        > figure{
+            background-color: transparent;
+        }
+        
+    }
+    .food{
+        > section{
+            width: 35%;
+            @include flexCenter;
+            img{
+                width: 10vh;
+                height: 10vh;
+            }
+            width: 100%
+        }
+        @include flexRow(0);
+    }
+    .foodList{
+        width: 65%;
+        flex-direction: row;
+        column-gap:1vh;
+    }
 }
