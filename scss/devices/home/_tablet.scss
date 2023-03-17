@@ -94,4 +94,29 @@
             }
         }
     }
+    //CONTACT
+    .contact{
+        &:hover article{
+            background-color: $mainColor;
+        }
+        > p{
+            @include flexCenter;
+            font-size: 1.3rem;
+            padding: 1vh 0;
+        }
+        > article{
+            background-color: transparent;
+            }
+        }
+        .contform{
+            [type=submit]:hover{
+                background-image: url("https://images.pexels.com/photos/5898313/pexels-photo-5898313.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+                border: 1px solid transparent;
+                color: transparent;
+                transition: .7s;
+            }
+        }
 }

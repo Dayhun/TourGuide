@@ -83,4 +83,33 @@
             }
         }
     }
+    // CONTACT
+    .contform{
+        row-gap: 3vw;
+        > article{
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 2vh;
+            justify-content: center;
+        }
+        input{
+            width: 40%;
+            padding: 1vw 2vw;
+        }
+        select{
+            padding: 1vw 2vw;
+            width: 44%;
+        }
+        [type=submit]{
+            width: 25%;
+        }
+    }
+    .contact{
+        > article{
+            height: 10vh;
+        }
+        >p{
+            font-size: 1.1rem;
+        }
+    }
 }
