@@ -3,12 +3,14 @@
     details {
         display: none;
     }
+
     nav {
         height: 10vh;
         padding: 0 3%;
         align-items: center;
         position: sticky;
         top: 0;
+        z-index: 5;
 
         > ul {
             @include flexRow(1vw);
@@ -36,7 +38,7 @@
     }
     // NAV END
     // HEADER START
-    .kHeader {
+    .BHeader {
         height: 75vh;
         a {
             padding: 1vh 7vh;
