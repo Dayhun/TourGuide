@@ -63,6 +63,22 @@
     video {
         height: 75vh;
     }
+    //BRAZ
+    .brazil{
+        row-gap: 1vh;
+        > section{
+            h3{
+                font-size: 30px;
+            }
+            height: 16vh;
+        }
+        a{
+            width: 20%;
+            padding: 2%;
+            border-radius: 25px;
+            font-weight: 600;
+        }
+    }
 
     // KOREA
     .korea {
@@ -81,6 +97,22 @@
                 font-weight: 600;
                 font-size: 19px;
             }
+        }
+    }
+    // COL
+    .colombia{
+        row-gap: 1vh;
+        > section{
+            height: 16vh;
+        }
+        h3{
+            font-size: 30px;
+        }
+        a{
+            width: 20%;
+            padding: 2%;
+            border-radius: 25px;
+            font-weight: 600;
         }
     }
     // CONTACT

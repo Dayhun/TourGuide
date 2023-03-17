@@ -92,6 +92,28 @@
             a:hover {
                 background-color: transparent;
             }
+            padding-bottom: 0;
+        }
+    }
+    //BR
+    .brazil{
+        a{
+            width: 25%;
+            &:hover{
+                background-color: transparent;
+            }
+        }
+    }
+    //COL
+    .colombia{
+        h3 {
+            font-size: 25px;
+        }
+        a{
+            width: 25%;
+            &:hover{
+                background-color: transparent;
+            }
         }
     }
     //CONTACT
