@@ -9,6 +9,7 @@
         align-items: center;
         position: sticky;
         top: 0;
+        z-index: 5;
 
         > ul {
             @include flexRow(1vw);
@@ -35,7 +36,7 @@
         }
     }
     //HEADER
-    header{
+    header {
         height: 75vh;
         a{
             padding: 1vh 7vh;
@@ -59,7 +60,27 @@
             padding-top: 2%;
         }
     }
-    video{
+    video {
         height: 75vh;
+    }
+
+    // KOREA
+    .korea {
+        h3 {
+            font-size: 30px;
+        }
+        figure {
+            align-items: center;
+        }
+        figcaption {
+            align-items: center;
+            p {
+                font-size: 18px;
+            }
+            a {
+                font-weight: 600;
+                font-size: 19px;
+            }
+        }
     }
 }
