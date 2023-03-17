@@ -35,6 +35,48 @@
         }
     }
     // NAV END
+    // HEADER START
+    .BHeader {
+        height: 45vh;
+        h3 {
+            padding: 1vw;
+            font-size: 1.1rem;
+        }
+        h3:hover {
+            color: #0e8388;
+            transition: 0.6s;
+        }
+        h3:hover strong {
+            color: whitesmoke;
+            transition: 0.6s;
+        }
+        h2 {
+            font-size: 3.1rem;
+        }
+        h1 {
+            font-size: 2rem;
+        }
+        article {
+            height: 60%;
+            @include flexCenter;
+            width: 75%;
+        }
+        form:hover {
+            border: 3px solid white;
+            cursor: pointer;
+        }
+        form:hover [type="submit"] {
+            background-color: white;
+            color: $nav;
+            cursor: pointer;
+        }
+        a:hover {
+            background-color: whitesmoke;
+            color: #0e8388;
+            transition: 0.3s;
+        }
+    }
+    // HEADER END
     // CULTURE START
     .culture{
         article{
@@ -77,4 +119,11 @@
         }
     }
     // BIOMES END
+    // FOOTER START
+    footer {
+        section a:hover {
+            color: black;
+        }
+    }
+    // FOOTER END
 }
