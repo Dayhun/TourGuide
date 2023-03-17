@@ -28,15 +28,42 @@
     // HEADER
     .kHeader {
         height: 45vh;
-        > section {
-            > h1 {
-                font-size: 50px;
-                letter-spacing: 2px;
-            }
-            > h2 {
-                width: 70%;
-                font-size: 22px;
-            }
+        h3 {
+            padding: 1vw;
+            font-size: 1.1rem;
+        }
+        h3:hover {
+            color: #0e8388;
+            transition: 0.6s;
+        }
+        h3:hover strong {
+            color: whitesmoke;
+            transition: 0.6s;
+        }
+        h2 {
+            font-size: 3.1rem;
+        }
+        h1 {
+            font-size: 2rem;
+        }
+        article {
+            height: 60%;
+            @include flexCenter;
+            width: 75%;
+        }
+        form:hover {
+            border: 3px solid white;
+            cursor: pointer;
+        }
+        form:hover [type="submit"] {
+            background-color: white;
+            color: $nav;
+            cursor: pointer;
+        }
+        a:hover {
+            background-color: whitesmoke;
+            color: #0e8388;
+            transition: 0.3s;
         }
     }
 
@@ -152,7 +179,7 @@
             width: 35%;
             font-weight: 600;
             &:hover {
-                background-color: transparent;
+                background-color: white;
                 color: $aColor;
             }
         }
@@ -177,7 +204,7 @@
             height: 40vh;
             position: relative;
             overflow-y: hidden;
-            justify-content: flex-end;
+            justify-content: flex-start;
             &:hover > figcaption {
                 visibility: visible;
                 height: 100%;
@@ -198,13 +225,12 @@
         figcaption {
             z-index: 2;
             position: absolute;
-            background-color: rgba($color: $footer, $alpha: 0.9);
+            background-color: rgba($color: $nav, $alpha: 0.9);
             width: 90%;
             height: 0%;
             display: flex;
             text-align: center;
-            align-items: center;
-            justify-content: center;
+            @include flexCenter;
             row-gap: 2vh;
             transition: 0.4s;
             padding: 0 5%;
@@ -236,6 +262,13 @@
         aside {
             width: 38%;
             min-height: 50vh;
+        }
+    }
+
+    // FOOTER
+    footer {
+        section a:hover {
+            color: black;
         }
     }
 }

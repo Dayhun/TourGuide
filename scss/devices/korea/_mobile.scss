@@ -57,25 +57,73 @@
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
-        height: 55vh;
+        height: 65vh;
         > section {
             width: 100%;
             height: 100%;
-            background-color: rgba(80, 80, 80, 0.6);
-            @include flexCol(2vh);
-            justify-content: center;
-            align-items: center;
+            background-color: rgba($color: $nav, $alpha: 0.3);
+            @include flexCol(3vh);
+            @include flexCenter;
             text-align: center;
             color: white;
-            > h1 {
-                font-size: 40px;
-            }
-            > h2 {
-                width: 80%;
-                font-size: 15px;
-                font-weight: 500;
+        }
+        article {
+            text-align: center;
+            color: white;
+            height: 45%;
+            @include flexCol(0);
+            align-items: center;
+        }
+        form {
+            border: 3px solid $nav;
+            display: flex;
+            row-gap: 0;
+            border-radius: 7px;
+            [type="submit"] {
+                font-size: 1.1rem;
+                background-color: $nav;
+                color: white;
+                font-weight: 700;
             }
         }
+        input {
+            border: none;
+            background-color: rgba($color: black, $alpha: 0.4);
+            padding: 1vw 1vw;
+        }
+        h3 {
+            background-color: $nav;
+            border: 1px solid $nav;
+            border-radius: 15px;
+            font-size: 0.8rem;
+            width: 85%;
+            padding: 2vw;
+        }
+        strong {
+            color: #0e8388;
+        }
+        h2 {
+            font-size: 2rem;
+            font-weight: 900;
+        }
+        h1 {
+            font-size: 1.5rem;
+            font-family: 700;
+        }
+        a {
+            color: whitesmoke;
+            background-color: #0e8388;
+            border: 1px solid #0e8388;
+            border-radius: 10px;
+            padding: 1vw 5vh;
+            font-size: 1.1rem;
+            font-weight: 700;
+        }
+    }
+    ::placeholder {
+        color: white;
+        font-weight: 600;
+        font-size: 1rem;
     }
 
     //MAIN
@@ -184,6 +232,7 @@
             margin-top: 8%;
             background-color: $hover;
             border: 2px solid $hover;
+            border-radius: 20px;
             color: black;
             width: 40%;
             text-align: center;
