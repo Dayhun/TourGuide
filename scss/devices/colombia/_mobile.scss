@@ -18,14 +18,154 @@
     .cright{
         align-items: center;
     }
+    .cleft,
+    .cright{
+        width: 90%;
+    }
     .cmain{
+        h2{
+            font-weight: 800;
+        }
         padding-bottom: 5vw;
-        background-color: $mainColor;
+        background-color: whitesmoke;
         padding-top: 5vw;
+        @include flexCol(2vh);
+    }
+    // NAV
+    nav {
+        position: relative;
+        padding: 3%;
+        background-color: white;
+        @include flexRow;
+        justify-content: space-between;
+
+        > ul {
+            display: none;
+        }
+
+        aside,
+        details {
+            font-size: 25px;
+            padding: 2% 3%;
+            text-align: center;
+            color: white;
+            background-color: $nav;
+        }
+
+        details > article {
+            @include flexCol(5vh);
+            position: absolute;
+            background-color: $nav;
+            left: 3%;
+            margin-top: 1%;
+            width: 84%;
+            padding: 5%;
+            font-size: 18px;
+            font-weight: 600;
+
+            > ul:first-child {
+                @include flexCol(3vh);
+                align-items: center;
+                padding-top: 2vh;
+                text-transform: uppercase;
+            }
+
+            > ul:last-child {
+                @include flexRow;
+                row-gap: 1vh;
+                justify-content: space-between;
+                flex-wrap: wrap;
+            }
+
+            a {
+                color: white;
+            }
+        }
+    }
+    // HEADER
+    header{
+        height: 65vh;
+        width: 100%;
+        > section{
+            position: relative;
+            z-index: 2;
+            background-color:rgba($color: $nav, $alpha: .3);
+            width: 100%;
+            height: 100%;
+            @include flexCol(3vh);
+            justify-content: center;
+            align-items: center;
+        }
+        article{
+            text-align: center;
+            color: white;
+            height: 45%;
+            @include flexCol(0);
+            align-items: center;
+        }
+        form{
+            border: 3px solid $nav;
+            display: flex;
+            row-gap: 0;
+            border-radius: 7px;
+            [type=submit]{
+                font-size: 1.1rem;
+                background-color: $nav;
+                color: white;
+                font-weight: 700;
+            }
+        }
+        input{
+            border: none;
+            background-color: rgba($color: black
+            , $alpha: .4);
+            padding: 1vw 1vw;
+        }
+        h3{
+            background-color: $nav;
+            border: 1px solid $nav;
+            border-radius: 15px;
+            font-size: .8rem;
+            width: 85%;
+            padding: 2vw;
+        }
+        strong{
+            color: #0E8388;
+        }
+        h2{
+            font-size: 2rem;
+            font-weight: 900;
+        }
+        h1{
+            font-size: 1.5rem;
+            font-family: 700;
+        }
+        a{
+            color: whitesmoke;
+            background-color: #0E8388;
+            border: 1px solid #0E8388;
+            border-radius: 10px;
+            padding: 1vw 5vh;
+            font-size: 1.1rem;
+            font-weight: 700;
+        }
+    
+    }
+    ::placeholder {
+        color: white;
+        font-weight: 600;
+        font-size: 1rem;
+    }
+    video{
+        height: 65vh;
+        object-fit: cover;
+        position: absolute;
+        z-index: 1;
+        width: 100%;
     }
     .faq{
-        width: 90%;
-        background-color:lightgrey;
+        background-color:$mainColor;
+        width: 100%;
         padding: 3vh 0;
         @include flexCol(0);
         align-items: center;
@@ -65,11 +205,12 @@
             width: 85%;
         }
         > a{
-            background-color: #0E8388;
-            width: 30%;
+            font-size: .9rem;
             padding: 1vh;
+            background-color: $footer;
             color: whitesmoke;
-            @include flexCenter;
+            border: 1px solid $footer;
+            border-radius: 15px;
         }
     }
     .form{
@@ -77,19 +218,21 @@
         border-bottom: 1px solid grey;
     }
     .food{
+        background-color: $mainColor;
         display: flex;
         flex-direction: column-reverse;
+        padding-bottom: 2vh;
         > aside{
             @include flexCol(3vw);
             align-items: center;
         }
         a{
-            height: 6vh;
-            width: 6vh;
-            @include flexCenter;
-            font-size: 1.4rem;
-            background-color: $aColor;
+            font-size: .9rem;
+            padding: 1vh;
+            background-color: $footer;
             color: whitesmoke;
+            border: 1px solid $footer;
+            border-radius: 15px;
         }
         > section{
             display: none;
@@ -114,6 +257,7 @@
             }
         }
     }
+    // festival
     .festival{
         > section{
             display: none;
@@ -130,7 +274,6 @@
         align-items: center;
         figure{
             padding: 4%;
-            background-color: $footer;
             width: 70%;
             @include flexCol(0);
             align-items: center;
@@ -143,10 +286,30 @@
             height: 10vh;
         }
     }
+    .fest1{
+        background-color: rgba($color: yellow, $alpha: .7);
+        border: 1px solid rgba($color: yellow, $alpha: .7);;
+        border-radius: 15px;
+    }
+    .fest2{
+        background-color: rgba($color: blue, $alpha: .7);
+        border: 1px solid rgba($color: blue, $alpha: .7);
+        border-radius: 15px;
+    }
+    .fest3{
+        background-color: rgba($color: red, $alpha: .7);
+        border: 1px solid rgba($color: red, $alpha: .7);
+        border-radius: 15px;
+    }
     .place{
         > article{
+            > h2{
+                padding: 1vh;
+            }
             text-align: center;
+            background-color: whitesmoke;
         }
+        background-color: $mainColor;
     }
     .place1,
     .place2,
@@ -155,18 +318,24 @@
         > aside{
             text-align: center;
             background-color: $footer;
+            > p{
+                font-size: 1.5rem;
+                padding: 1%;
+            }
         }
         > figure{
-            @include flexRow(4vw);
-            padding: 2vh 0;
+            padding: 2vh 1vh;
         }
         figcaption{
-            width: 60%;
+            font-size: 1rem;
         }
         img{
-            width: 35%;
-            height: 22vh;
+            width: 15vh;
+            height: 15vh;
+            padding: 3%;
+            float: left;
         }
+        
     }
     .place > section:nth-child(odd){
         > figure{
@@ -196,6 +365,44 @@
             font-size: 1rem;
         }
     }
+     // FOOTER START
+     footer {
+        background-color: $footer;
+        height: 16vh;
+        width: 100%;
+        section {
+            @include flexCol(2vw);
+            width: 100%;
+            height: 100%;
+            align-items: center;
+            justify-content: center;
+            p {
+                color: white;
+            }
+            ul {
+                @include flexRow(3vh);
+                display: flex;
+                column-gap: 3vh;
+            }
+            li {
+                position: relative;
+                display: inline-block;
+                width: 30px;
+                height: 30px;
+                border-radius: 50%;
+                border: 2px solid white;
+            }
+            a {
+                color: white;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                font-size: 15px;
+            }
+        }
+    }
+    // FOOTER END
     
 
 

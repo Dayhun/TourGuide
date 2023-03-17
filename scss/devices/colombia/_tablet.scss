@@ -1,4 +1,74 @@
 @media (min-width:$tabletVersion){
+     // NAV
+     nav {
+        aside,
+        details {
+            font-size: 28px;
+            padding: 1.5% 2%;
+        }
+
+        details {
+            cursor: pointer;
+        }
+
+        details > article {
+            row-gap: 7vh;
+            font-size: 22px;
+
+            > ul:first-child {
+                row-gap: 4vh;
+            }
+
+            a:hover {
+                color: black;
+            }
+        }
+    }
+     //HEADER
+     header {
+        height: 45vh;
+        h3{
+            padding: 1vw;
+            font-size: 1.1rem;
+        }
+        h3:hover{
+            color: #0E8388;
+            transition: .6s;
+        }
+        h3:hover strong{
+            color: whitesmoke;
+            transition: .6s;
+        }
+        h2{
+            font-size: 3.1rem;
+        }
+        h1{
+            font-size: 2rem;
+        }
+        article{
+            height: 60%;
+            @include flexCenter;
+            width: 75%;
+        }
+        form:hover{
+            border: 3px solid white;
+            cursor: pointer;
+        }
+        form:hover [type=submit]{
+            background-color: white;
+            color: $nav;
+            cursor: pointer;
+        }
+        a:hover{
+            background-color: whitesmoke;
+            color: #0E8388;
+            transition: .3s;
+        }
+        
+    }
+    video {
+        height: 45vh;
+    }
     .gallery{
         @include flexRow(1vh);
         figcaption{
