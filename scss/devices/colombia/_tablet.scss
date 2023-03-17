@@ -24,15 +24,15 @@
             }
         }
     }
-     //HEADER
-     header {
+    //HEADER
+    header {
         height: 45vh;
         h3{
             padding: 1vw;
             font-size: 1.1rem;
         }
         h3:hover{
-            color: #0E8388;
+            color: whitesmoke;
             transition: .6s;
         }
         h3:hover strong{
@@ -51,40 +51,58 @@
             width: 75%;
         }
         form:hover{
-            border: 3px solid white;
+            border: 3px solid #64471F;
             cursor: pointer;
         }
         form:hover [type=submit]{
-            background-color: white;
-            color: $nav;
+            background-color: #64471F;
+            color: #D7BE64;
             cursor: pointer;
         }
         a:hover{
-            background-color: whitesmoke;
-            color: #0E8388;
+            background-color: #64471F;
+            color: #D7BE64;
             transition: .3s;
+            border: 1px solid #64471F;
         }
         
     }
-    video {
-        height: 45vh;
+    .cleft,
+    .cright{
+        width: 100%
     }
-    .gallery{
-        @include flexRow(1vh);
-        figcaption{
-            display: none;
+    //travel section
+    .travel{
+        width: 100%;
+        article{
+            padding-top: 2vh;
         }
-        img{
-            width: 100%;
-            height: 15vh;
+    }
+    .travcontent{
+        figcaption{
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 2vh;
+            aside:nth-child(even){
+                display: unset;
+            }    
+        }
+        aside{
+            width: 40%;
+        }
+        h3{
+            display: none
         }
     }
     .place{
         width: 100%;
     }
     .festival{
-        width: 90%;
+        background-color: transparent;
+        width: 100%;
         > section{
+            width: 45%;
             @include flexCenter;
             img{
                 width: 10vh;
@@ -92,30 +110,86 @@
             }
         }
         @include flexRow(0);
+        > aside{
+            background-color: transparent;
+            padding: 2vh 2vh;
+        }
     }
+    
     .festList{
         flex-direction: row;
+        column-gap:1vh;  
+        figure{
+            padding: 1vh;
+        }
+    }
+    .food{
+        background-color: transparent;
+        width: 100%;
+        > section{
+            width: 20%;
+            @include flexCenter;
+            img{
+                width: 10vh;
+                height: 10vh;
+            }
+        }
+        @include flexRow(0);
+        > aside{
+            background-color: $mainColor;
+            padding: 2vh 2vh;
+        }
+        a:hover{
+            color: $footer;
+            background-color: whitesmoke;
+            border: 1px solid whitesmoke;
+        }
+    }
+    //food
+    .foodList{
+        width: 100%;
+        flex-direction: row;
         column-gap:1vh;
-        > figure{
-            background-color: transparent;
+        figcaption{
+            display: none;
+        }
+        img{
+            object-fit: cover;
+            width: 17vh;
+            height: 17vh;
         }
         
     }
-    .food{
-        > section{
-            width: 35%;
-            @include flexCenter;
-            img{
-                width: 10vh;
-                height: 10vh;
-            }
-            width: 100%
+    //places
+    .gallery{
+        @include flexRow(1vh);
+        figcaption{
+            display: none;
         }
-        @include flexRow(0);
+        justify-content: center;
+        padding: 1vh 0;
     }
-    .foodList{
-        width: 65%;
-        flex-direction: row;
-        column-gap:1vh;
+    .place1,
+    .place2,
+    .place3,
+    .place4{
+        > aside {
+            width: 100%;
+            > p{
+                font-size: 1.1rem;
+            }
+        }
+        @include flexCol(0);
+        align-items: center;
     }
+    .faq{
+        > a:hover{
+            color: $footer;
+            background-color: whitesmoke;
+            border: 1px solid whitesmoke;   
+        }
+        li{
+            padding: 0;
+        }
+    }    
 }

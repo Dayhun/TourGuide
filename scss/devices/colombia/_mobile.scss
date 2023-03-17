@@ -84,12 +84,16 @@
     }
     // HEADER
     header{
+        background-image: url("https://cdn.audleytravel.com/5627/4018/79/1336702-medellin-colombia.jpg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
         height: 65vh;
         width: 100%;
         > section{
             position: relative;
             z-index: 2;
-            background-color:rgba($color: $nav, $alpha: .3);
+            background-color:rgba($color: black, $alpha: .7);
             width: 100%;
             height: 100%;
             @include flexCol(3vh);
@@ -98,20 +102,20 @@
         }
         article{
             text-align: center;
-            color: white;
+            color: #D7BE64;
             height: 45%;
             @include flexCol(0);
             align-items: center;
         }
         form{
-            border: 3px solid $nav;
+            border: 3px solid #D7BE64;
             display: flex;
             row-gap: 0;
             border-radius: 7px;
             [type=submit]{
                 font-size: 1.1rem;
-                background-color: $nav;
-                color: white;
+                background-color: #D7BE64;
+                color: #64471F;
                 font-weight: 700;
             }
         }
@@ -122,15 +126,17 @@
             padding: 1vw 1vw;
         }
         h3{
-            background-color: $nav;
-            border: 1px solid $nav;
+            background-color: #D7BE64;
+            border: 1px solid #D7BE64;
             border-radius: 15px;
             font-size: .8rem;
             width: 85%;
             padding: 2vw;
+            color: #64471F;
         }
         strong{
-            color: #0E8388;
+            color: #64471F;
+            font-family: 900;
         }
         h2{
             font-size: 2rem;
@@ -141,9 +147,9 @@
             font-family: 700;
         }
         a{
-            color: whitesmoke;
-            background-color: #0E8388;
-            border: 1px solid #0E8388;
+            color: #64471F;
+            background-color: #D7BE64;
+            border: 1px solid #D7BE64;
             border-radius: 10px;
             padding: 1vw 5vh;
             font-size: 1.1rem;
@@ -156,13 +162,6 @@
         font-weight: 600;
         font-size: 1rem;
     }
-    video{
-        height: 65vh;
-        object-fit: cover;
-        position: absolute;
-        z-index: 1;
-        width: 100%;
-    }
     .faq{
         background-color:$mainColor;
         width: 100%;
@@ -170,7 +169,7 @@
         @include flexCol(0);
         align-items: center;
         ul a{
-            color: $aColor;
+            color: black;
             display: flex;
             justify-content: space-between;
             width: 80%;
@@ -186,7 +185,7 @@
             align-items: center;
         }
         [class$=fa-q]{
-            color: black;
+            color: #64471F;
             font-size: 1.4rem;
         }
         > article{
@@ -344,9 +343,9 @@
     }
     //quote
     .quote{
-        height: 8vh;
-        width: 100%;
-        background-image: url("/img/colombia/bandejapaisa.jpg");
+        height:13vh;
+        width:100%;
+        background-image: url("https://e1.pxfuel.com/desktop-wallpaper/437/970/desktop-wallpaper-bandera-colombia-bandera-de-colombia-thumbnail.jpg");
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
@@ -365,8 +364,73 @@
             font-size: 1rem;
         }
     }
-     // FOOTER START
-     footer {
+    // TRAVEL
+    .travel{
+        background-image: url("https://realestatemarket.com.mx/images/2021/08-agosto/1208/g_aeropuerto_internacional_de_El_Dorado_en.jpeg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        > section{
+            position: relative;
+            z-index: 2;
+            background-color:rgba($color: black, $alpha: .7);
+            width: 100%;
+            height: 100%;
+            @include flexCol(3vh);
+            justify-content: center;
+            align-items: center;
+        }
+        article{
+            text-align: center;
+            color: #D7BE64;
+        }
+        h2{
+            font-size: 2rem;
+            font-weight: 900;
+        }
+        h1{
+            font-size: 1.5rem;
+            font-family: 700;
+        }
+    
+    }
+    .travcontent{
+        figure{
+            @include flexCol(1vw);
+            padding: 3vh;
+            align-items: center;
+        }
+        img{
+            width: 25vh;
+            height: 25vh;
+        }
+        figcaption{
+            @include flexCol(1vw);
+            align-items: center;
+            aside:nth-child(even){
+                display: none;
+            }
+        }
+        h3{
+            color: #D7BE64;
+            font-size: 1rem;
+            text-align: center;
+        }
+        aside{
+            background-color: #A5E23B;
+            border: 1px solid #A5E23B;
+            padding: 1vw;
+            width: 60%;
+            border-radius: 10px;
+        }
+    }
+    .faq{
+        li{
+            padding: 2vh 0;
+        }
+    }
+    // FOOTER START
+    footer {
         background-color: $footer;
         height: 16vh;
         width: 100%;
