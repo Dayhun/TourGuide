@@ -25,10 +25,35 @@
         }
     }
     //HEADER
-    header{
+    header {
         height: 45vh;
     }
-    video{
+    video {
         height: 45vh;
+    }
+
+    // KOREA
+    .korea {
+        h3 {
+            font-size: 25px;
+        }
+        figure {
+            padding: 3%;
+            flex-direction: row;
+            column-gap: 4vw;
+            align-items: flex-start;
+        }
+        img {
+            width: 50%;
+        }
+        figcaption {
+            align-items: flex-end;
+            a {
+                width: 40%;
+            }
+            a:hover {
+                background-color: transparent;
+            }
+        }
     }
 }
