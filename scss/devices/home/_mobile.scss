@@ -1,4 +1,9 @@
 @media (min-width: $mobileVersion) {
+    main{
+        padding: 4vh 0;
+        @include flexCol(0);
+        align-items: center;
+    }
     main {
         section {
             width: 100%;
@@ -213,6 +218,83 @@
         }
     }
     // KOREA END
+    //contact
+    .contact{
+       @include flexCol(2vw);
+       > p{
+        background-color: $mainColor;
+        width: 95%;
+        padding-top: 2vh;
+        text-align: center;
+       }
+       > article{
+        background-color: $mainColor;
+        width: 95%;
+        height: 7vh;
+        @include flexCenter;
+        > i{
+            font-size:1.8rem;
+            color: $footer;
+        }
+       }
+
+    }
+    .contform{
+        @include flexCol(6vw);
+        background-color: $mainColor;
+        width: 95%;
+        padding: 3vh 0;
+        > article{
+            @include flexCol(2vw);
+            align-items: center;
+        }
+        input{
+            width: 90%;
+            border: none;
+            padding: 3vw 2vw;
+            background-color: whitesmoke;
+            border: 1px solid whitesmoke;
+            border-radius: 15px;
+            
+        }
+        [type=submit]{
+            width: 50%;
+            background-color: $footer;
+            color: whitesmoke;
+            font-weight: 700;
+            border: 1px solid $footer;
+            font-size: 1rem;
+        }
+        
+        > aside{
+            @include flexCol(2vw);
+            align-items: center;
+            > label{
+                width: 100%;
+            }
+        }
+        select{
+            color: dimgrey;
+            background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='4' height='5' viewBox='0 0 4 5'%3e%3cpath fill='%23343a40' d='M2 0L0 2h4zm0 5L0 3h4z'/%3e%3c/svg%3e") no-repeat right 0.75rem center/8px 10px;
+            appearance: none;
+            background-color: whitesmoke;
+            font-size: 1rem;
+            font-weight: 600;
+            width: 95%;
+            border: none;
+            padding: 3vw 2vw;
+            background-color: whitesmoke;
+            border: 1px solid whitesmoke;
+            border-radius: 15px;
+        }
+        ::placeholder{
+            color: dimgrey;
+        }
+        a{
+            color: #0E8388;
+            font-weight: 600;
+        }
+    }
     // FOOTER START
     footer {
         background-color: $footer;
