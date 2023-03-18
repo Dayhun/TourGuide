@@ -1,0 +1,253 @@
+@media (min-width:$tabletVersion){
+     // NAV
+     nav {
+        aside,
+        details {
+            font-size: 28px;
+            padding: 1.5% 2%;
+        }
+
+        details {
+            cursor: pointer;
+        }
+
+        details > article {
+            row-gap: 7vh;
+            font-size: 22px;
+
+            > ul:first-child {
+                row-gap: 4vh;
+            }
+
+            a:hover {
+                color: black;
+            }
+        }
+    }
+    //HEADER
+    .cHeader {
+        height: 45vh;
+        h3{
+            padding: 1vw;
+            font-size: 1.1rem;
+        }
+        h3:hover{
+            color: whitesmoke;
+            transition: .6s;
+        }
+        h3:hover strong{
+            color: whitesmoke;
+            transition: .6s;
+        }
+        h2{
+            font-size: 3.1rem;
+        }
+        h1{
+            font-size: 2rem;
+        }
+        article{
+            height: 60%;
+            @include flexCenter;
+            width: 75%;
+        }
+        form:hover{
+            border: 3px solid #64471F;
+            cursor: pointer;
+        }
+        form:hover [type=submit]{
+            background-color: #64471F;
+            color: #D7BE64;
+            cursor: pointer;
+        }
+        a:hover{
+            background-color: #64471F;
+            color: #D7BE64;
+            transition: .3s;
+            border: 1px solid #64471F;
+        }
+        
+    }
+    .cleft,
+    .cright{
+        width: 100%
+    }
+    //travel section
+    .travel{
+        width: 100%;
+        article{
+            padding-top: 2vh;
+        }
+    }
+    .travcontent{
+        figcaption{
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 2vh;
+            aside:nth-child(even){
+                display: unset;
+            }    
+        }
+        aside{
+            width: 40%;
+        }
+        h3{
+            display: none
+        }
+    }
+    .place{
+        width: 100%;
+    }
+    .festival{
+        background-color: transparent;
+        width: 100%;
+        > section{
+            width: 45%;
+            @include flexCenter;
+            img{
+                width: 10vh;
+                height: 10vh;
+            }
+        }
+        @include flexRow(0);
+        > aside{
+            background-color: transparent;
+            padding: 2vh 2vh;
+        }
+    }
+    
+    .festList{
+        flex-direction: row;
+        column-gap:1vh;  
+        figure{
+            padding: 1vh;
+        }
+    }
+    .food{
+        background-color: transparent;
+        width: 100%;
+        > section{
+            width: 20%;
+            @include flexCenter;
+            img{
+                width: 10vh;
+                height: 10vh;
+            }
+        }
+        @include flexRow(0);
+        > aside{
+            background-color: $mainColor;
+            padding: 2vh 2vh;
+        }
+        a:hover{
+            color: $footer;
+            background-color: whitesmoke;
+            border: 1px solid whitesmoke;
+        }
+    }
+    //food
+    .foodList{
+        width: 100%;
+        flex-direction: row;
+        column-gap:1vh;
+        figcaption{
+            display: none;
+        }
+        img{
+            object-fit: cover;
+            width: 17vh;
+            height: 17vh;
+        }
+        
+    }
+    //places
+    .gallery{
+        @include flexRow(1vh);
+        figcaption{
+            display: none;
+        }
+        justify-content: center;
+        padding: 1vh 0;
+    }
+    .place1,
+    .place2,
+    .place3,
+    .place4{
+        > aside {
+            width: 100%;
+            > p{
+                font-size: 1.1rem;
+            }
+        }
+        @include flexCol(0);
+        align-items: center;
+    }
+    .faq{
+        > a:hover{
+            color: $footer;
+            background-color: whitesmoke;
+            border: 1px solid whitesmoke;   
+        }
+        li{
+            padding: 0;
+        }
+    }  
+    //debug
+    main{
+        .food{
+            figure{
+                display: unset;
+                height: unset;
+                padding-top: 0;
+                padding-bottom: 0;
+                background-color: unset;
+            }
+        }
+        .cleft{
+            justify-content: unset;
+            text-align: unset;
+            > .festival{
+                text-align: unset;
+                padding-bottom: 0;
+            }
+            .festList{
+                text-align: unset;
+                padding-bottom: 0;
+                width: unset;
+            }
+        }
+        .festList{
+            figure{
+                height: unset;
+            }
+            figcaption{
+                display: unset;
+            }
+        }
+        .fest1,
+        .fest2,
+        .fest3{
+            h3{
+                font-size: unset;
+            }
+            p{
+                font-size: unset;
+            }
+        }
+        .festival{
+            > section{
+                flex-direction: unset;
+                row-gap: 0;
+                text-align: unset;
+                padding-bottom: 0;
+                > figure{
+                    display: unset;
+                    height: unset;
+                    padding-top: 0;
+                    padding-bottom: 0;
+                    background-color: transparent;
+                }
+            }
+        }
+    }
+}
