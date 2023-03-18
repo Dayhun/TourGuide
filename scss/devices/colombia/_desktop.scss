@@ -37,7 +37,7 @@
         }
     }
      //HEADER
-     header {
+     .cHeader {
         height: 75vh;
         a{
             padding: 1vh 7vh;
@@ -158,6 +158,17 @@
     .faq{
         li{
             padding: 1vh;
+        }
+    }
+    //debugging
+    .place1,
+    .place2,
+    .place3,
+    .place4{
+        > aside{
+            > p{
+                font-weight: 500;
+            }
         }
     }
     

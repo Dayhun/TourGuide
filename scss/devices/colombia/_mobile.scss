@@ -83,7 +83,7 @@
         }
     }
     // HEADER
-    header{
+    .cHeader{
         background-image: url("https://cdn.audleytravel.com/5627/4018/79/1336702-medellin-colombia.jpg");
         background-position: center;
         background-size: cover;
@@ -179,7 +179,7 @@
             padding: 0 2vh;
             @include flexRow(2vh);
             border-bottom: 1px solid darkgrey;
-            font-size: 20px;
+            font-size: 14px;
             text-transform: uppercase;
             height: 8vh;
             align-items: center;
@@ -195,7 +195,8 @@
             display: flex;
             justify-content: center;
             h2{
-                width: 80%;
+                width: 100%;
+                text-align: center;
             }
             
         }
@@ -247,6 +248,10 @@
         figure{
             @include flexCol(2vw);
             align-items: center;
+            height: unset;
+            padding-top: 0;
+            padding-bottom: 0;
+            background-color: transparent;
         }
         figcaption{
             width: 80%;
@@ -300,13 +305,19 @@
         border: 1px solid rgba($color: red, $alpha: .7);
         border-radius: 15px;
     }
+    .fest1,
+    .fest2,
+    .fest3{
+        figcaption{
+            row-gap: 0;
+        }
+    }
     .place{
         > article{
             > h2{
                 padding: 1vh;
             }
             text-align: center;
-            background-color: whitesmoke;
         }
         background-color: $mainColor;
     }
@@ -314,6 +325,10 @@
     .place2,
     .place3,
     .place4{
+        width: unset;
+        display: unset;
+        text-align: left;
+        padding-bottom: 0;
         > aside{
             text-align: center;
             background-color: $footer;
@@ -324,9 +339,15 @@
         }
         > figure{
             padding: 2vh 1vh;
+            display: unset;
+            height: unset;
+            padding-top: 0;
+            padding-bottom: 0;
+            background-color: transparent;
         }
         figcaption{
             font-size: 1rem;
+            display: unset;
         }
         img{
             width: 15vh;
@@ -335,6 +356,12 @@
             float: left;
         }
         
+    }
+    .gallery{
+        width: unset;
+        display: unset;
+        text-align: unset;
+        padding-bottom: 0;
     }
     .place > section:nth-child(odd){
         > figure{
@@ -429,6 +456,12 @@
             padding: 2vh 0;
         }
     }
+    #trav{
+        background-color: transparent;
+    }
+    main > .cright > .travel{
+        padding-bottom: 0;
+    } 
     // FOOTER START
     footer {
         background-color: $footer;

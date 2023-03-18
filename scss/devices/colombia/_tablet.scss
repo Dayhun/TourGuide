@@ -25,7 +25,7 @@
         }
     }
     //HEADER
-    header {
+    .cHeader {
         height: 45vh;
         h3{
             padding: 1vw;
@@ -191,5 +191,63 @@
         li{
             padding: 0;
         }
-    }    
+    }  
+    //debug
+    main{
+        .food{
+            figure{
+                display: unset;
+                height: unset;
+                padding-top: 0;
+                padding-bottom: 0;
+                background-color: unset;
+            }
+        }
+        .cleft{
+            justify-content: unset;
+            text-align: unset;
+            > .festival{
+                text-align: unset;
+                padding-bottom: 0;
+            }
+            .festList{
+                text-align: unset;
+                padding-bottom: 0;
+                width: unset;
+            }
+        }
+        .festList{
+            figure{
+                height: unset;
+            }
+            figcaption{
+                display: unset;
+            }
+        }
+        .fest1,
+        .fest2,
+        .fest3{
+            h3{
+                font-size: unset;
+            }
+            p{
+                font-size: unset;
+            }
+        }
+        .festival{
+            > section{
+                flex-direction: unset;
+                row-gap: 0;
+                text-align: unset;
+                padding-bottom: 0;
+                > figure{
+                    display: unset;
+                    height: unset;
+                    padding-top: 0;
+                    padding-bottom: 0;
+                    background-color: transparent;
+                }
+            }
+        }
+    }
 }
