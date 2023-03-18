@@ -1,0 +1,275 @@
+@media (min-width: $mobileVersion){
+    // GENERAL STYLE START
+    section{
+        h3{
+            font-size: 30px;
+        }
+    }
+    main{
+        section{
+            width: 100%;
+            @include flexCol(3vw);
+            @include flexCenter;
+            text-align: center;
+            section{
+                width: 95%;
+                @include flexCol(3vw);
+                @include flexCenter;
+                text-align: center;
+                padding-bottom: 2vh;
+            }
+            >article{
+                @include flexCol(5vw);
+                justify-content: center;
+            }
+            figure{
+                @include flexCol(5vw);
+                align-items: center;
+                height: 100%;
+                padding-top: 3vh;
+                padding-bottom: 3vh;
+                background-color: lightgray;
+            }
+            img{
+                width: 95%;
+            }
+            figcaption{
+                @include flexCol(5vw);
+                @include flexCenter;
+            }
+        }
+    }
+    // GENERAL STYLE END
+    // NAV START
+    nav {
+        position: relative;
+        padding: 3%;
+        background-color: whitesmoke;
+        @include flexRow;
+        justify-content: space-between;
+        > ul {
+            display: none;
+        }
+        aside,
+        details {
+            font-size: 25px;
+            padding: 2% 3%;
+            text-align: center;
+            color: white;
+            background-color: $nav;
+        }
+        details > article {
+            @include flexCol(5vh);
+            position: absolute;
+            background-color: $nav;
+            left: 3%;
+            margin-top: 1%;
+            width: 84%;
+            padding: 5%;
+            font-size: 18px;
+            font-weight: 600;
+            > ul:first-child {
+                @include flexCol(3vh);
+                align-items: center;
+                padding-top: 2vh;
+                text-transform: uppercase;
+            }
+            > ul:last-child {
+                @include flexRow;
+                row-gap: 1vh;
+                justify-content: space-between;
+                flex-wrap: wrap;
+            }
+            a {
+                color: white;
+            }
+        }
+    }
+    // NAV END
+    // HEADER START
+    .BHeader {
+        background-image: url("/img/brazil/salvador-bahia.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 65vh;
+        > section {
+            width: 100%;
+            height: 100%;
+            background-color: rgba($color: $nav, $alpha: 0.3);
+            @include flexCol(3vh);
+            @include flexCenter;
+            text-align: center;
+            color: white;
+        }
+        article {
+            text-align: center;
+            color: white;
+            height: 45%;
+            @include flexCol(0);
+            align-items: center;
+        }
+        form {
+            border: 3px solid $nav;
+            display: flex;
+            row-gap: 0;
+            border-radius: 7px;
+            [type="submit"] {
+                font-size: 1.1rem;
+                background-color: $nav;
+                color: white;
+                font-weight: 700;
+            }
+        }
+        input {
+            border: none;
+            background-color: rgba($color: black, $alpha: 0.4);
+            padding: 1vw 1vw;
+        }
+        h3 {
+            background-color: $nav;
+            border: 1px solid $nav;
+            border-radius: 15px;
+            font-size: 0.8rem;
+            width: 85%;
+            padding: 2vw;
+        }
+        strong {
+            color: #0e8388;
+        }
+        h2 {
+            font-size: 2rem;
+            font-weight: 900;
+        }
+        h1 {
+            font-size: 1.5rem;
+            font-family: 700;
+        }
+        a {
+            color: whitesmoke;
+            background-color: #0e8388;
+            border: 1px solid #0e8388;
+            border-radius: 10px;
+            padding: 1vw 5vh;
+            font-size: 1.1rem;
+            font-weight: 700;
+        }
+    }
+    ::placeholder {
+        color: white;
+        font-weight: 600;
+        font-size: 1rem;
+    }
+    // HEADER END
+    // SUMMARY START
+    .summary{
+        article{
+            background-color: lightgray;
+            padding-top: 3vh;
+            padding-bottom: 3vh;
+            @include flexCenter;
+            p{
+                width: 90%;
+            }
+        }
+    }
+    // SUMMARY END
+    // CULTURE START
+    .culture{
+        article{
+            h4{
+                width: 96%;
+                padding: 2%;
+                background-color: $nav;
+            }
+            p{
+                width: 90%;
+            }
+        }
+    }
+    // CULTURE END
+    // TOURIST ACTIVITIES START
+    .activities{
+        article{
+            h4{
+                width: 96%;
+                padding: 2%;
+                background-color: $nav;
+            }
+            p{
+                width: 90%;
+            }
+        }
+    }
+    // TOURIST ACTIVITIES END
+    // TOURISTIC CITIES START
+    .cities{
+        article{
+            h4{
+                font-weight: 700;
+                font-size: 20px;
+            }
+            h5{
+                font-weight: 700;
+                font-size: 15px;
+            }
+        }
+    }
+    // TOURISTIC CITIES END
+    // BIOMES START
+    .biomes{
+        aside{
+            background-color: lightgray;
+            height: 100%;
+            padding-top: 3vh;
+            padding-bottom: 3vh;
+        }
+        article{
+            h5{
+                font-size: 20px;
+            }
+        }
+        a{
+            padding: 2%;
+            background-color: $footer;
+            color: white;
+        }
+        
+    }
+    // BIOMES END
+    // FOOTER START
+    footer{
+        background-color: $footer;
+        height: 16vh;
+        width: 100%;
+        section{
+            @include flexCol(2vw);
+            @include flexCenter;
+            width: 100%;
+            height: 100%;
+            p{
+                color: white;
+            }
+            ul{
+                @include flexRow(3vh);
+            }
+            li{
+                position: relative;
+                display: inline-block;
+                width: 30px;
+                height: 30px;
+                border-radius: 50%;
+                border: 2px solid white;
+            }   
+            a{
+                color: white;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                font-size: 15px;
+            }
+        }
+    }
+    // FOOTER END
+}

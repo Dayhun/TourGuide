@@ -36,7 +36,7 @@
         }
     }
     //HEADER
-    header {
+    .hHeader {
         height: 75vh;
         a{
             padding: 1vh 7vh;
@@ -104,6 +104,7 @@
         row-gap: 1vh;
         > section{
             height: 16vh;
+            width: 100%;
         }
         h3{
             font-size: 30px;

@@ -64,7 +64,7 @@
         }
     }
     // HEADER
-    header{
+    .hHeader{
         height: 65vh;
         width: 100%;
         > section{
@@ -344,6 +344,15 @@
         a{
             color: #0E8388;
             font-weight: 600;
+        }
+    }
+    //DEBUG
+    main{
+        .colombia,
+        .brazil{
+            > section{
+                padding-bottom: 0;
+            }
         }
     }
     // FOOTER START

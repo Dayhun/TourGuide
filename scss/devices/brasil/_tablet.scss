@@ -1,0 +1,129 @@
+@media(min-width: $tabletVersion){
+    // GENERAL STYLE START
+    main{
+        p{
+            font-size: 25px;
+        }
+        h3{
+            font-size: 40px;
+        }
+    }
+    // GENERAL STYLE END
+    // NAV START
+    nav {
+        aside,
+        details {
+            font-size: 28px;
+            padding: 1.5% 2%;
+        }
+
+        details {
+            cursor: pointer;
+        }
+
+        details > article {
+            row-gap: 7vh;
+            font-size: 22px;
+
+            > ul:first-child {
+                row-gap: 4vh;
+            }
+
+            a:hover {
+                color: black;
+            }
+        }
+    }
+    // NAV END
+    // HEADER START
+    .BHeader {
+        height: 45vh;
+        h3 {
+            padding: 1vw;
+            font-size: 1.1rem;
+        }
+        h3:hover {
+            color: #0e8388;
+            transition: 0.6s;
+        }
+        h3:hover strong {
+            color: whitesmoke;
+            transition: 0.6s;
+        }
+        h2 {
+            font-size: 3.1rem;
+        }
+        h1 {
+            font-size: 2rem;
+        }
+        article {
+            height: 60%;
+            @include flexCenter;
+            width: 75%;
+        }
+        form:hover {
+            border: 3px solid white;
+            cursor: pointer;
+        }
+        form:hover [type="submit"] {
+            background-color: white;
+            color: $nav;
+            cursor: pointer;
+        }
+        a:hover {
+            background-color: whitesmoke;
+            color: #0e8388;
+            transition: 0.3s;
+        }
+    }
+    // HEADER END
+    // CULTURE START
+    .culture{
+        article{
+            h4{
+                font-size: 30px; 
+            }
+        }
+    }
+    // CULTURE END
+    // TOURIST ACTIVITIES START
+    .activities{
+        article{
+            h4{
+                font-size: 30px;
+            }
+        }
+    }
+    // TOURIST ACTIVITIES END
+    // TOURISTIC CITIES START
+    .cities{
+        article{
+            h4{
+                font-size: 30px; 
+            }
+            h5{
+                font-size: 30px;
+            }
+        }
+    }
+    // TOURISTIC CITIES END
+    // BIOMES START
+    .biomes{
+        article{
+            h5{
+                font-size: 30px;
+            }
+            a{
+                font-size: 25px;
+            }
+        }
+    }
+    // BIOMES END
+    // FOOTER START
+    footer {
+        section a:hover {
+            color: black;
+        }
+    }
+    // FOOTER END
+}
