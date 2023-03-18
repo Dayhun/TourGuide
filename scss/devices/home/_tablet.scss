@@ -1,0 +1,144 @@
+@media (min-width: $tabletVersion) {
+    // NAV
+    nav {
+        aside,
+        details {
+            font-size: 28px;
+            padding: 1.5% 2%;
+        }
+
+        details {
+            cursor: pointer;
+        }
+
+        details > article {
+            row-gap: 7vh;
+            font-size: 22px;
+
+            > ul:first-child {
+                row-gap: 4vh;
+            }
+
+            a:hover {
+                color: black;
+            }
+        }
+    }
+    //HEADER
+    .hHeader {
+        height: 45vh;
+        h3{
+            padding: 1vw;
+            font-size: 1.1rem;
+        }
+        h3:hover{
+            color: #0E8388;
+            transition: .6s;
+        }
+        h3:hover strong{
+            color: whitesmoke;
+            transition: .6s;
+        }
+        h2{
+            font-size: 3.1rem;
+        }
+        h1{
+            font-size: 2rem;
+        }
+        article{
+            height: 60%;
+            @include flexCenter;
+            width: 75%;
+        }
+        form:hover{
+            border: 3px solid white;
+            cursor: pointer;
+        }
+        form:hover [type=submit]{
+            background-color: white;
+            color: $nav;
+            cursor: pointer;
+        }
+        a:hover{
+            background-color: whitesmoke;
+            color: #0E8388;
+            transition: .3s;
+        }
+        
+    }
+    video {
+        height: 45vh;
+    }
+
+    // KOREA
+    .korea {
+        h3 {
+            font-size: 25px;
+        }
+        figure {
+            padding: 3%;
+            flex-direction: row;
+            column-gap: 4vw;
+            align-items: flex-start;
+        }
+        img {
+            width: 50%;
+        }
+        figcaption {
+            align-items: flex-end;
+            a {
+                width: 40%;
+            }
+            a:hover {
+                background-color: transparent;
+            }
+            padding-bottom: 0;
+        }
+    }
+    //BR
+    .brazil{
+        a{
+            width: 25%;
+            &:hover{
+                background-color: transparent;
+            }
+        }
+    }
+    //COL
+    .colombia{
+        h3 {
+            font-size: 25px;
+        }
+        a{
+            width: 25%;
+            &:hover{
+                background-color: transparent;
+            }
+        }
+    }
+    //CONTACT
+    .contact{
+        &:hover article{
+            background-color: $mainColor;
+        }
+        > p{
+            @include flexCenter;
+            font-size: 1.3rem;
+            padding: 1vh 0;
+        }
+        > article{
+            background-color: transparent;
+            }
+        }
+        .contform{
+            [type=submit]:hover{
+                background-image: url("https://images.pexels.com/photos/5898313/pexels-photo-5898313.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+                border: 1px solid transparent;
+                color: transparent;
+                transition: .7s;
+            }
+        }
+}
